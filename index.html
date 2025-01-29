@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+      <button id="toggleDarkMode">Dark🎩|Light🐻‍❄️</button>
+      <div id="form-container" class="form-container">
+          <form id="myForm">
+              <h2>Submit Your Details</h2>
+              <label for="username">Name:</label>
+              <input type="text" id="username" name="username" required>
+              
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="mail" required>
+              
+              <label for="department">Department:</label>
+              <input type="text" id="department" name="department" required>
+              
+              <label for="projects">Projects:</label>
+              <input type="text" id="projects" name="projects" required>
+              
+              <label for="description">Description:</label>
+              <textarea id="description" name="description" required></textarea>
+              
+              <label for="profileImage">Profile Image:</label>
+              <input type="file" id="profileImage" name="profileImage">
+              
+              <input type="submit" value="Submit">
+          </form>
+      </div>
+      
+      <div id="profileDisplay" class="hidden profile-display">
+         <div id="profilePicContainer" class="profile-pic-container">
+             <img id="profilePic" alt="Profile Image">
+         </div>
+         <div class="profile-details" >
+             <p><strong>Name:</strong> <span id="displayUsername"></span></p>
+             <p><strong>Email:</strong> <span id="displayMail"></span></p>
+             <p><strong>Department:</strong> <span id="displayDepartment"></span></p>
+             <p><strong>Projects:</strong> <span id="displayProjects"></span></p>
+             <p><strong>Description:</strong> <span id="displayDescription"></span></p>
+         </div>
+     </div>
+    </div>
+
+    <footer>
+      Made with 💖 for ACE
+    </footer>
+<script src="./script.js"></script>
+</body>
+</html>
